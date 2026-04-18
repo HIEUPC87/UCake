@@ -280,10 +280,10 @@ export default function App() {
               <div>
                 <h4 className="font-semibold text-primary-900 text-sm mb-4">Kết nối với Ú Cake</h4>
                 <div className="flex gap-4">
-                  <a href="#" className="w-12 h-12 rounded-full border border-primary-300 flex justify-center items-center hover:bg-primary-900 hover:text-white transition-colors text-primary-800">
-                    <Instagram size={20} />
+                  <a href="0796500409" className="w-12 h-12 rounded-full border border-primary-300 flex justify-center items-center hover:bg-primary-900 hover:text-white transition-colors text-primary-800">
+                    <Zalo size={20} />
                   </a>
-                  <a href="#" className="w-12 h-12 rounded-full border border-primary-300 flex justify-center items-center hover:bg-primary-900 hover:text-white transition-colors text-primary-800">
+                  <a href="https://www.facebook.com/people/%C3%9A-Cake/61577435911102/" className="w-12 h-12 rounded-full border border-primary-300 flex justify-center items-center hover:bg-primary-900 hover:text-white transition-colors text-primary-800">
                     <Facebook size={20} />
                   </a>
                 </div>
