@@ -46,7 +46,7 @@ export default function App() {
           <div className="cursor-pointer flex items-center gap-3" onClick={() => scrollTo('home')}>
             {/* Sử dụng class mix-blend-multiply để làm trong suốt nền vàng nhạt của ảnh logo nếu nó không phải là PNG trong suốt */}
             <img src="/logo.png" alt="Ú Cake Logo" className="h-12 w-auto md:h-14 mix-blend-multiply" />
-            <span className="text-2xl font-serif font-bold text-primary-900 tracking-tight mt-1">Tiệm bánh - Ú Cake</span>
+            <span className="text-2xl font-serif font-bold text-primary-900 tracking-tight mt-1">Ú Cake</span>
           </div>
           
           {/* Desktop Nav */}
@@ -114,12 +114,12 @@ export default function App() {
             initial={{ scale: 1.1, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=2000&auto=format&fit=crop" 
-            alt="Delicious Cake" 
+            src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?q=80&w=2000&auto=format&fit=crop" 
+            alt="Tiệm bánh thủ công" 
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-primary-900/20 lg:bg-transparent"></div>
+          <div className="absolute inset-0 bg-primary-900/40 lg:bg-transparent"></div>
         </div>
       </section>
 
@@ -133,19 +133,20 @@ export default function App() {
             variants={staggerContainer}
             className="grid lg:grid-cols-2 gap-16 items-center"
           >
-            {/* Image/Video Placeholder */}
-            <motion.div variants={fadeIn} className="relative aspect-[3/4] lg:aspect-square clip-oval w-full max-w-md mx-auto">
-              <img 
-                src="https://images.unsplash.com/photo-1621236378699-8597fb842b58?q=80&w=1000&auto=format&fit=crop" 
-                alt="Baking Process"
+            {/* Video Section */}
+            <motion.div variants={fadeIn} className="relative aspect-[3/4] lg:aspect-square clip-oval w-full max-w-md mx-auto overflow-hidden shadow-lg border-4 border-primary-100">
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-black/20 flex items-center justify-center transition-colors hover:bg-black/40 group cursor-pointer">
-                <div className="w-20 h-20 bg-primary-50/80 backdrop-blur-sm rounded-full flex items-center justify-center text-primary-900 group-hover:scale-110 transition-transform">
-                  <Play size={32} className="ml-1" />
-                </div>
-              </div>
+                poster="https://images.unsplash.com/photo-1621236378699-8597fb842b58?q=80&w=1000&auto=format&fit=crop"
+              >
+                <source src="/video.mp4" type="video/mp4" />
+                Trình duyệt của bạn không hỗ trợ thẻ video.
+              </video>
+              <div className="absolute inset-0 bg-primary-900/10 pointer-events-none"></div>
             </motion.div>
 
             {/* Text */}
@@ -195,10 +196,10 @@ export default function App() {
               { name: "Panna Cotta", desc: "Đủ vị trái cây tươi: Dâu, Chanh dây, Việt quất, Kiwi, Xoài, Đào, Dưa lưới.", price: "15.000đ / cái", img: "https://upload.wikimedia.org/wikipedia/commons/8/80/Panna_Cotta_with_cream_and_garnish.jpg" },
               { name: "Tart Trứng", desc: "Vỏ xốp giòn rụm, nhân kem trứng béo ngậy nướng vàng xém.", price: "15K/1 cái • 40K/3 cái • 60K/5 cái", img: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Pasteis_de_Belem.jpg" },
               { name: "Tiramisu", desc: "Truyền thống, Dâu, Xoài chanh dây, Đào, Oreo, Matcha, Khoai môn, Nho, Việt quất.", price: "50K - 55K / cái", img: "https://upload.wikimedia.org/wikipedia/commons/5/58/Tiramisu_-_Raffaele_Diomede.jpg" },
-              { name: "Bông Lan Trứng Muối", desc: "Bánh cup nhỏ mềm xốp, phủ sốt béo ngậy và chà bông thơm lừng.", price: "15K/cái • 50K/hộp", img: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?q=80&w=800&auto=format&fit=crop" },
-              { name: "Mousse", desc: "Trái cây: Dâu tây, Chanh dây, Bơ, Xoài, Nhãn, Việt quất, Dưa lưới.", price: "50.000đ / hộp", img: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Chocolate_coffee_mousse.jpg" },
+              { name: "Bông Lan Trứng Muối", desc: "Cốt bánh mềm xốp, phủ sốt siêu béo ngậy và chà bông mặn mà.", price: "15K/cái • 50K/hộp", img: "https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=800&auto=format&fit=crop" },
+              { name: "Mousse", desc: "Trái cây: Dâu tây, Chanh dây, Bơ, Xoài, Nhãn, Việt quất, Dưa lưới.", price: "50.000đ / hộp", img: "https://images.unsplash.com/photo-1559598467-f8b76c8155d0?q=80&w=800&auto=format&fit=crop" },
               { name: "Flangato", desc: "Bánh Flan mềm mịn kết hợp cà phê thơm lức, ngọt đắng cân bằng.", price: "45.000đ / cái", img: "https://upload.wikimedia.org/wikipedia/commons/5/58/Cremecaramel.jpg" },
-              { name: "Sữa chua (Yogurt)", desc: "Sữa chua nhà làm sánh mịn, ngọt dịu thanh mát cực tốt cho sức khỏe.", price: "10.000đ / hủ", img: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Joghurt.jpg" },
+              { name: "Sữa chua (Yogurt)", desc: "Sữa chua nhà làm sánh mịn, ngọt dịu thanh mát cực tốt cho sức khỏe.", price: "10.000đ / hủ", img: "https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=800&auto=format&fit=crop" },
             ].map((item, index) => (
               <motion.div 
                 key={index} 
@@ -299,18 +300,22 @@ export default function App() {
               className="bg-primary-50 p-8 md:p-12 rounded-2xl shadow-sm border border-primary-200"
             >
               <h3 className="text-2xl font-serif text-primary-900 mb-6">Gửi yêu cầu tới tiệm</h3>
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-6" action="https://formsubmit.co/hieupc79@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="🎉 Đơn đặt bánh mới từ website Ú Cake!" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                
                 <div>
                   <label className="block text-xs uppercase tracking-widest text-primary-800 mb-2 font-semibold">Tên của bạn</label>
-                  <input type="text" className="w-full bg-transparent border-b border-primary-300 py-3 text-primary-900 focus:outline-none focus:border-primary-600 transition-colors" placeholder="Nguyễn Văn A" />
+                  <input type="text" name="Tên_Khách_Hàng" required className="w-full bg-transparent border-b border-primary-300 py-3 text-primary-900 focus:outline-none focus:border-primary-600 transition-colors" placeholder="Nguyễn Văn A" />
                 </div>
                 <div>
-                  <label className="block text-xs uppercase tracking-widest text-primary-800 mb-2 font-semibold">Số điện thoại</label>
-                  <input type="tel" className="w-full bg-transparent border-b border-primary-300 py-3 text-primary-900 focus:outline-none focus:border-primary-600 transition-colors" placeholder="09xx xxx xxx" />
+                  <label className="block text-xs uppercase tracking-widest text-primary-800 mb-2 font-semibold">Số điện thoại / Zalo</label>
+                  <input type="tel" name="Số_Điện_Thoại" required className="w-full bg-transparent border-b border-primary-300 py-3 text-primary-900 focus:outline-none focus:border-primary-600 transition-colors" placeholder="09xx xxx xxx" />
                 </div>
                 <div>
                   <label className="block text-xs uppercase tracking-widest text-primary-800 mb-2 font-semibold">Loại bánh / Ghi chú</label>
-                  <textarea rows={4} className="w-full bg-transparent border-b border-primary-300 py-3 text-primary-900 focus:outline-none focus:border-primary-600 transition-colors resize-none" placeholder="Bạn muốn đặt bánh cho dịp gì?"></textarea>
+                  <textarea name="Yêu_Cầu" rows={4} required className="w-full bg-transparent border-b border-primary-300 py-3 text-primary-900 focus:outline-none focus:border-primary-600 transition-colors resize-none" placeholder="Bạn muốn đặt bánh gì, size bao nhiêu, lấy vào lúc nào?"></textarea>
                 </div>
                 <button type="submit" className="w-full bg-primary-900 text-primary-50 text-sm uppercase tracking-widest font-semibold py-4 rounded-md hover:bg-primary-800 transition-colors shadow-lg">
                   Gửi yêu cầu
