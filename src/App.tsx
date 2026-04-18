@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu as MenuIcon, X, Phone, Mail, MapPin, Instagram, Facebook, ChevronRight, Play } from 'lucide-react';
+import { Menu as MenuIcon, X, Phone, Mail, MapPin, Instagram, Facebook, ChevronRight, Play, MessageCircle } from 'lucide-react';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
@@ -43,8 +43,9 @@ export default function App() {
       {/* Navbar */}
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-primary-50/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-          <div className="text-3xl font-serif font-bold tracking-tight text-primary-900 cursor-pointer" onClick={() => scrollTo('home')}>
-            Ú Cake
+          <div className="cursor-pointer flex items-center gap-2" onClick={() => scrollTo('home')}>
+            {/* Sử dụng class mix-blend-multiply để làm trong suốt nền vàng nhạt của ảnh logo nếu nó không phải là PNG trong suốt */}
+            <img src="/logo.png" alt="Ú Cake Logo" className="h-12 w-auto md:h-14 mix-blend-multiply" />
           </div>
           
           {/* Desktop Nav */}
@@ -258,14 +259,14 @@ export default function App() {
                   <MapPin className="text-primary-600 mt-1" size={24} />
                   <div>
                     <h4 className="font-semibold text-primary-900 uppercase tracking-widest text-sm mb-1">Địa chỉ</h4>
-                    <p className="text-primary-800 font-light">76 Mạc Thanh Đạm, Long Điền<br/>TP. Hồ Chí Minh</p>
+                    <p className="text-primary-800 font-light">123 Đường Hoàng Hoa Thám, Quận Tân Bình<br/>TP. Hồ Chí Minh</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Phone className="text-primary-600 mt-1" size={24} />
                   <div>
                     <h4 className="font-semibold text-primary-900 uppercase tracking-widest text-sm mb-1">Hotline / Zalo</h4>
-                    <p className="text-primary-800 font-light">0796 500 409</p>
+                    <p className="text-primary-800 font-light">090 123 4567</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -280,7 +281,10 @@ export default function App() {
               <div>
                 <h4 className="font-semibold text-primary-900 text-sm mb-4">Kết nối với Ú Cake</h4>
                 <div className="flex gap-4">
-                 <a href="https://www.facebook.com/people/%C3%9A-Cake/61577435911102/" className="w-12 h-12 rounded-full border border-primary-300 flex justify-center items-center hover:bg-primary-900 hover:text-white transition-colors text-primary-800">
+                  <a href="#" className="w-12 h-12 rounded-full border border-primary-300 flex justify-center items-center hover:bg-primary-900 hover:text-white transition-colors text-primary-800">
+                    <Instagram size={20} />
+                  </a>
+                  <a href="#" className="w-12 h-12 rounded-full border border-primary-300 flex justify-center items-center hover:bg-primary-900 hover:text-white transition-colors text-primary-800">
                     <Facebook size={20} />
                   </a>
                 </div>
@@ -325,11 +329,11 @@ export default function App() {
         <p className="text-sm font-light opacity-80">&copy; {new Date().getFullYear()} Ú Cake Bakery. Bản quyền thuộc về Tiệm bánh Ú Cake.</p>
       </footer>
 
-      {/* Floating Action Button (Hotline) */}
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
+      {/* Floating Action Buttons */}
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
         {/* Facebook Button */}
         <a 
-          href="https://m.me/ucake" 
+          href="https://m.me/61577435911102" 
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#0084FF] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform overflow-visible group"
@@ -342,7 +346,7 @@ export default function App() {
 
         {/* Zalo Button */}
         <a 
-          href="https://zalo.me/0901234567" 
+          href="https://zalo.me/0796500409" 
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#0068ff] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform overflow-visible group"
@@ -355,7 +359,7 @@ export default function App() {
 
         {/* Hotline Button */}
         <a 
-          href="tel:0901234567" 
+          href="tel:0796500409" 
           className="bg-[#e05a5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform overflow-visible group relative"
         >
           <span className="absolute inset-0 rounded-full bg-[#e05a5a] animate-ping opacity-75"></span>
