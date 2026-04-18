@@ -192,13 +192,13 @@ export default function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {[
-              { name: "Panna Cotta", desc: "Đủ vị trái cây tươi: Dâu, Chanh dây, Việt quất, Kiwi, Xoài, Đào, Dưa lưới.", price: "15.000đ / cái", img: "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?q=80&w=800&auto=format&fit=crop" },
-              { name: "Tart Trứng", desc: "Vỏ xốp giòn rụm, nhân kem trứng béo ngậy nướng vàng xém.", price: "15K/1 cái • 40K/3 cái • 60K/5 cái", img: "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?q=80&w=800&auto=format&fit=crop" },
-              { name: "Tiramisu", desc: "Truyền thống, Dâu, Xoài chanh dây, Đào, Oreo, Matcha, Khoai môn, Nho, Việt quất.", price: "50K - 55K / cái", img: "https://images.unsplash.com/photo-1586040140378-b5634cb4c8cb?q=80&w=800&auto=format&fit=crop" },
-              { name: "Bông Lan Trứng Muối", desc: "Bánh cup nhỏ mềm xốp, phủ sốt béo ngậy và chà bông thơm lừng.", price: "15K/cái • 50K/hộp", img: "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?q=80&w=800&auto=format&fit=crop" },
-              { name: "Mousse", desc: "Trái cây: Dâu tây, Chanh dây, Bơ, Xoài, Nhãn, Việt quất, Dưa lưới.", price: "50.000đ / hộp", img: "https://images.unsplash.com/photo-1550468407-1d89e7cdfbab?q=80&w=800&auto=format&fit=crop" },
-              { name: "Flangato", desc: "Bánh Flan mềm mịn kết hợp cà phê thơm lức, ngọt đắng cân bằng.", price: "45.000đ / cái", img: "https://images.unsplash.com/photo-1528975604071-b4dc52a2d18c?q=80&w=800&auto=format&fit=crop" },
-              { name: "Sữa chua (Yogurt)", desc: "Sữa chua nhà làm sánh mịn, ngọt dịu thanh mát cực tốt cho sức khỏe.", price: "10.000đ / hủ", img: "https://images.unsplash.com/photo-1584278860047-22db9ff82bed?q=80&w=800&auto=format&fit=crop" },
+              { name: "Panna Cotta", desc: "Đủ vị trái cây tươi: Dâu, Chanh dây, Việt quất, Kiwi, Xoài, Đào, Dưa lưới.", price: "15.000đ / cái", img: "https://upload.wikimedia.org/wikipedia/commons/8/80/Panna_Cotta_with_cream_and_garnish.jpg" },
+              { name: "Tart Trứng", desc: "Vỏ xốp giòn rụm, nhân kem trứng béo ngậy nướng vàng xém.", price: "15K/1 cái • 40K/3 cái • 60K/5 cái", img: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Pasteis_de_Belem.jpg" },
+              { name: "Tiramisu", desc: "Truyền thống, Dâu, Xoài chanh dây, Đào, Oreo, Matcha, Khoai môn, Nho, Việt quất.", price: "50K - 55K / cái", img: "https://upload.wikimedia.org/wikipedia/commons/5/58/Tiramisu_-_Raffaele_Diomede.jpg" },
+              { name: "Bông Lan Trứng Muối", desc: "Bánh cup nhỏ mềm xốp, phủ sốt béo ngậy và chà bông thơm lừng.", price: "15K/cái • 50K/hộp", img: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?q=80&w=800&auto=format&fit=crop" },
+              { name: "Mousse", desc: "Trái cây: Dâu tây, Chanh dây, Bơ, Xoài, Nhãn, Việt quất, Dưa lưới.", price: "50.000đ / hộp", img: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Chocolate_coffee_mousse.jpg" },
+              { name: "Flangato", desc: "Bánh Flan mềm mịn kết hợp cà phê thơm lức, ngọt đắng cân bằng.", price: "45.000đ / cái", img: "https://upload.wikimedia.org/wikipedia/commons/5/58/Cremecaramel.jpg" },
+              { name: "Sữa chua (Yogurt)", desc: "Sữa chua nhà làm sánh mịn, ngọt dịu thanh mát cực tốt cho sức khỏe.", price: "10.000đ / hủ", img: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Joghurt.jpg" },
             ].map((item, index) => (
               <motion.div 
                 key={index} 
