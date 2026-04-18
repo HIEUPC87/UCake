@@ -259,14 +259,14 @@ export default function App() {
                   <MapPin className="text-primary-600 mt-1" size={24} />
                   <div>
                     <h4 className="font-semibold text-primary-900 uppercase tracking-widest text-sm mb-1">Địa chỉ</h4>
-                    <p className="text-primary-800 font-light">123 Đường Hoàng Hoa Thám, Quận Tân Bình<br/>TP. Hồ Chí Minh</p>
+                    <p className="text-primary-800 font-light">76 Mạc Thanh Đạm, Long Điền<br/>TP. Hồ Chí Minh</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Phone className="text-primary-600 mt-1" size={24} />
                   <div>
                     <h4 className="font-semibold text-primary-900 uppercase tracking-widest text-sm mb-1">Hotline / Zalo</h4>
-                    <p className="text-primary-800 font-light">090 123 4567</p>
+                    <p className="text-primary-800 font-light">0796 500 409</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -281,10 +281,8 @@ export default function App() {
               <div>
                 <h4 className="font-semibold text-primary-900 text-sm mb-4">Kết nối với Ú Cake</h4>
                 <div className="flex gap-4">
-                  <a href="#" className="w-12 h-12 rounded-full border border-primary-300 flex justify-center items-center hover:bg-primary-900 hover:text-white transition-colors text-primary-800">
-                    <Instagram size={20} />
-                  </a>
-                  <a href="#" className="w-12 h-12 rounded-full border border-primary-300 flex justify-center items-center hover:bg-primary-900 hover:text-white transition-colors text-primary-800">
+                  
+                  <a href="https://www.facebook.com/people/%C3%9A-Cake/61577435911102/" className="w-12 h-12 rounded-full border border-primary-300 flex justify-center items-center hover:bg-primary-900 hover:text-white transition-colors text-primary-800">
                     <Facebook size={20} />
                   </a>
                 </div>
