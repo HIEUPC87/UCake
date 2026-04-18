@@ -258,14 +258,14 @@ export default function App() {
                   <MapPin className="text-primary-600 mt-1" size={24} />
                   <div>
                     <h4 className="font-semibold text-primary-900 uppercase tracking-widest text-sm mb-1">Địa chỉ</h4>
-                    <p className="text-primary-800 font-light">123 Đường Hoàng Hoa Thám, Quận Tân Bình<br/>TP. Hồ Chí Minh</p>
+                    <p className="text-primary-800 font-light">76 Mạc Thanh Đạm, Long Điền<br/>TP. Hồ Chí Minh</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Phone className="text-primary-600 mt-1" size={24} />
                   <div>
                     <h4 className="font-semibold text-primary-900 uppercase tracking-widest text-sm mb-1">Hotline / Zalo</h4>
-                    <p className="text-primary-800 font-light">090 123 4567</p>
+                    <p className="text-primary-800 font-light">0796 500 409</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -330,7 +330,7 @@ export default function App() {
 
       {/* Floating Action Button (Hotline) */}
       <a 
-        href="tel:0901234567" 
+        href="tel:0796500409" 
         className="fixed bottom-6 right-6 z-50 bg-[#e05a5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform overflow-visible group"
       >
         <span className="absolute inset-0 rounded-full bg-[#e05a5a] animate-ping opacity-75"></span>
