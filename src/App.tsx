@@ -280,10 +280,7 @@ export default function App() {
               <div>
                 <h4 className="font-semibold text-primary-900 text-sm mb-4">Kết nối với Ú Cake</h4>
                 <div className="flex gap-4">
-                  <a href="#" className="w-12 h-12 rounded-full border border-primary-300 flex justify-center items-center hover:bg-primary-900 hover:text-white transition-colors text-primary-800">
-                    <Instagram size={20} />
-                  </a>
-                  <a href="https://www.facebook.com/people/%C3%9A-Cake/61577435911102/" className="w-12 h-12 rounded-full border border-primary-300 flex justify-center items-center hover:bg-primary-900 hover:text-white transition-colors text-primary-800">
+                 <a href="https://www.facebook.com/people/%C3%9A-Cake/61577435911102/" className="w-12 h-12 rounded-full border border-primary-300 flex justify-center items-center hover:bg-primary-900 hover:text-white transition-colors text-primary-800">
                     <Facebook size={20} />
                   </a>
                 </div>
@@ -329,16 +326,45 @@ export default function App() {
       </footer>
 
       {/* Floating Action Button (Hotline) */}
-      <a 
-        href="tel:0796500409" 
-        className="fixed bottom-6 right-6 z-50 bg-[#e05a5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform overflow-visible group"
-      >
-        <span className="absolute inset-0 rounded-full bg-[#e05a5a] animate-ping opacity-75"></span>
-        <Phone size={24} className="relative z-10 animate-bounce" style={{animationDuration: '2s'}} />
-        <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out relative z-10 font-medium pl-0 group-hover:pl-3">
-          Gọi món ngay
-        </span>
-      </a>
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
+        {/* Facebook Button */}
+        <a 
+          href="https://m.me/ucake" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#0084FF] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform overflow-visible group"
+        >
+          <Facebook size={24} className="relative z-10" />
+          <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out relative z-10 font-medium pl-0 group-hover:pl-3">
+            Chat Facebook
+          </span>
+        </a>
+
+        {/* Zalo Button */}
+        <a 
+          href="https://zalo.me/0901234567" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#0068ff] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform overflow-visible group"
+        >
+          <MessageCircle size={24} className="relative z-10" />
+          <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out relative z-10 font-medium pl-0 group-hover:pl-3">
+            Chat Zalo
+          </span>
+        </a>
+
+        {/* Hotline Button */}
+        <a 
+          href="tel:0901234567" 
+          className="bg-[#e05a5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform overflow-visible group relative"
+        >
+          <span className="absolute inset-0 rounded-full bg-[#e05a5a] animate-ping opacity-75"></span>
+          <Phone size={24} className="relative z-10 animate-bounce" style={{animationDuration: '2s'}} />
+          <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out relative z-10 font-medium pl-0 group-hover:pl-3">
+            Gọi món ngay
+          </span>
+        </a>
+      </div>
 
     </div>
   );
