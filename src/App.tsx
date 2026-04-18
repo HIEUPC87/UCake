@@ -43,9 +43,10 @@ export default function App() {
       {/* Navbar */}
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-primary-50/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-          <div className="cursor-pointer flex items-center gap-2" onClick={() => scrollTo('home')}>
+          <div className="cursor-pointer flex items-center gap-3" onClick={() => scrollTo('home')}>
             {/* Sử dụng class mix-blend-multiply để làm trong suốt nền vàng nhạt của ảnh logo nếu nó không phải là PNG trong suốt */}
             <img src="/logo.png" alt="Ú Cake Logo" className="h-12 w-auto md:h-14 mix-blend-multiply" />
+            <span className="text-2xl font-serif font-bold text-primary-900 tracking-tight mt-1">Ú Cake</span>
           </div>
           
           {/* Desktop Nav */}
@@ -191,12 +192,13 @@ export default function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {[
-              { name: "Strawberry Shortcake", desc: "Bông lan chifffon mềm mịn, dâu tây Đà Lạt, kem tươi dịu ngọt.", price: "350.000đ", img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=800&auto=format&fit=crop" },
-              { name: "Earl Grey Mousse", desc: "Mousse trà bá tước thanh tao, nhân thạch đào, cốt bánh quy bơ.", price: "400.000đ", img: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?q=80&w=800&auto=format&fit=crop" },
-              { name: "Choco Hazelnut", desc: "Socola đen 70%, hạt dẻ nướng giòn tẩm caramel, cốt socola đậm sâu.", price: "450.000đ", img: "https://images.unsplash.com/photo-1574085733277-851d9d856a3a?q=80&w=800&auto=format&fit=crop" },
-              { name: "Matcha Tiramisu", desc: "Bột trà xanh Uji, kem mascarpone béo ngậy, bọt rượu Rum nhẹ.", price: "380.000đ", img: "https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=800&auto=format&fit=crop" },
-              { name: "Velvet Red Wine", desc: "Red velvet nguyên bản kết hợp tầng kem dâu tây và thoảng hương vang đỏ.", price: "420.000đ", img: "https://images.unsplash.com/photo-1616541819779-7a541604a1b0?q=80&w=800&auto=format&fit=crop" },
-              { name: "Lemon Meringue", desc: "Bánh tart chanh chua thanh mát, phía trên là kem trứng nướng bông xốp.", price: "320.000đ", img: "https://images.unsplash.com/photo-1519869325930-281384150729?q=80&w=800&auto=format&fit=crop" },
+              { name: "Panna Cotta", desc: "Đủ vị trái cây tươi: Dâu, Chanh dây, Việt quất, Kiwi, Xoài, Đào, Dưa lưới.", price: "15.000đ / cái", img: "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?q=80&w=800&auto=format&fit=crop" },
+              { name: "Tart Trứng", desc: "Vỏ xốp giòn rụm, nhân kem trứng béo ngậy nướng vàng xém.", price: "15K/1 cái • 40K/3 cái • 60K/5 cái", img: "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?q=80&w=800&auto=format&fit=crop" },
+              { name: "Tiramisu", desc: "Truyền thống, Dâu, Xoài chanh dây, Đào, Oreo, Matcha, Khoai môn, Nho, Việt quất.", price: "50K - 55K / cái", img: "https://images.unsplash.com/photo-1586040140378-b5634cb4c8cb?q=80&w=800&auto=format&fit=crop" },
+              { name: "Bông Lan Trứng Muối", desc: "Bánh cup nhỏ mềm xốp, phủ sốt béo ngậy và chà bông thơm lừng.", price: "15K/cái • 50K/hộp", img: "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?q=80&w=800&auto=format&fit=crop" },
+              { name: "Mousse", desc: "Trái cây: Dâu tây, Chanh dây, Bơ, Xoài, Nhãn, Việt quất, Dưa lưới.", price: "50.000đ / hộp", img: "https://images.unsplash.com/photo-1550468407-1d89e7cdfbab?q=80&w=800&auto=format&fit=crop" },
+              { name: "Flangato", desc: "Bánh Flan mềm mịn kết hợp cà phê thơm lức, ngọt đắng cân bằng.", price: "45.000đ / cái", img: "https://images.unsplash.com/photo-1528975604071-b4dc52a2d18c?q=80&w=800&auto=format&fit=crop" },
+              { name: "Sữa chua (Yogurt)", desc: "Sữa chua nhà làm sánh mịn, ngọt dịu thanh mát cực tốt cho sức khỏe.", price: "10.000đ / hủ", img: "https://images.unsplash.com/photo-1584278860047-22db9ff82bed?q=80&w=800&auto=format&fit=crop" },
             ].map((item, index) => (
               <motion.div 
                 key={index} 
@@ -281,7 +283,6 @@ export default function App() {
               <div>
                 <h4 className="font-semibold text-primary-900 text-sm mb-4">Kết nối với Ú Cake</h4>
                 <div className="flex gap-4">
-                  
                   <a href="https://www.facebook.com/people/%C3%9A-Cake/61577435911102/" className="w-12 h-12 rounded-full border border-primary-300 flex justify-center items-center hover:bg-primary-900 hover:text-white transition-colors text-primary-800">
                     <Facebook size={20} />
                   </a>
