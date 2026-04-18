@@ -300,7 +300,7 @@ export default function App() {
               className="bg-primary-50 p-8 md:p-12 rounded-2xl shadow-sm border border-primary-200"
             >
               <h3 className="text-2xl font-serif text-primary-900 mb-6">Gửi yêu cầu tới tiệm</h3>
-              <form className="space-y-6" action="https://formsubmit.co/hieupc79@gmail.com" method="POST">
+              <form className="space-y-6" action="https://formsubmit.co/ec7fe3a167c92ec45f0bec7eb8c5e634" method="POST">
                 <input type="hidden" name="_subject" value="🎉 Đơn đặt bánh mới từ website Ú Cake!" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
