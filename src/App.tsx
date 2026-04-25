@@ -143,7 +143,7 @@ export default function App() {
                 className="w-full h-full object-cover"
                 poster="https://images.unsplash.com/photo-1621236378699-8597fb842b58?q=80&w=1000&auto=format&fit=crop"
               >
-                <source src="/video.mp4" type="video/mp4" />
+                <source src="/video2.mp4" type="video/mp4" />
                 Trình duyệt của bạn không hỗ trợ thẻ video.
               </video>
               <div className="absolute inset-0 bg-primary-900/10 pointer-events-none"></div>
