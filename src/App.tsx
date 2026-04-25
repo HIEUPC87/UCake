@@ -46,7 +46,7 @@ export default function App() {
           <div className="cursor-pointer flex items-center gap-3" onClick={() => scrollTo('home')}>
             {/* Sử dụng class mix-blend-multiply để làm trong suốt nền vàng nhạt của ảnh logo nếu nó không phải là PNG trong suốt */}
             <img src="/logo.png" alt="Ú Cake Logo" className="h-12 w-auto md:h-14 mix-blend-multiply" />
-            <span className="text-2xl font-serif font-bold text-primary-900 tracking-tight mt-1">Ú Cake</span>
+            <span className="text-2xl font-serif font-bold text-primary-900 tracking-tight mt-1">Tiệm bánh - ÚCake</span>
           </div>
           
           {/* Desktop Nav */}
