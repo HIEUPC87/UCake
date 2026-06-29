@@ -1,0 +1,23 @@
+# robots.txt — Ú Cake (https://ucake.vn)
+# Cho phép mọi công cụ tìm kiếm & trợ lý AI thu thập toàn bộ nội dung
+
+User-agent: *
+Allow: /
+
+# Trợ lý AI (tìm kiếm bằng AI) — cho phép rõ ràng
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://ucake.vn/sitemap.xml
